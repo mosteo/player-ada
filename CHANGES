@@ -1,0 +1,65 @@
++ Additions
+- Removals
+* Comments
+! Bugfixes
+
+--------------
+- 2010 03 19 -
+--------------
+[*] Migration to Player 3.
+[-] Several pieces of interfaces that were formerly available have been temporally removed due to refactoring.
+
+--------------
+- 2007 05 01 -
+--------------
+[*] 2.0.3.1 released.
+[!] Fixed the readclient test that was outdated (many are still, though).
+[+] Improved project file that easily allows building as static lib, shared lib or direct dependencies.
+
+--------------
+- 2006 11 16 -
+--------------
+[+] Partial graphics2d binding.
+[+] Player_Color_Type added.
+[+] Point_2d and Point_2d_Array added.
+
+--------------
+- 2006 10 26 -
+--------------
+* 2.0.3.0 released.
+
+--------------
+- 2006 04 28 -
+--------------
+* 2.0.1.2 released.
++ Removed the dependency on the matrix package.
+
+--------------
+- 2006 04 26 -
+--------------
++ 2.0.1.1 released.
+- Removed the Math package which was untested.
+
+--------------
+- 2006 03 29 -
+--------------
++ Added simulation interface.
+
+--------------
+- 2006 03 27 -
+--------------
+* 2.0.1.0 released.
++ Fixed the laser interface (was broken in 2.0.0.0).
++ Added the gps interface.
++ More independence from C constants via C proxy functions.
+
+--------------
+- 2006 03 07 -
+--------------
+* 2.0.0.0 released.
++ Minor changes to make it work with Player 2.0
+
+--------------
+- 2005 03 25 -
+--------------
+* 1.0 released.
