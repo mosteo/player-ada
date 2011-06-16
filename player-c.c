@@ -103,6 +103,18 @@ player_ada_laser_get_scan_id(playerc_laser_t *proxy)
     return proxy->scan_id;
 }
 
+double
+player_ada_laser_get_min_right(playerc_laser_t *proxy)
+{
+    return proxy->min_right;
+}
+
+double
+player_ada_laser_get_min_left(playerc_laser_t *proxy)
+{
+    return proxy->min_left;
+}
+
 void
 player_ada_laser_get_robot_pose(playerc_laser_t *proxy,
 				double *x, double *y, double *a)

@@ -93,6 +93,12 @@ package Player.Laser is
    function Get_Scan_Id (This : in Object) return Integer;
    --  Serial number that can be used to detect a new laser reading.
 
+   function Get_Min_Right (This : in Object) return Double;
+   --  Minimum range, in meters, in the right half of the scan.
+
+   function Get_Min_Left (This : in Object) return Double;
+   --  Minimum range, in meters, in the left half of the scan.
+
    function Get_Robot_Pose (This : in Object) return Pose;
    --  Pose when the reading was taken
 
