@@ -1,4 +1,4 @@
- --  Laser proxy interface
+--  Laser proxy interface
 
 with Player.Client;
 with Player.Interfaces;
