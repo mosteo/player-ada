@@ -258,6 +258,7 @@ package body Player.Laser is
    begin
       return Double (Internal (-This));
    end Get_Min_Left;
+
    --------------------
    -- Get_Robot_Pose --
    --------------------
