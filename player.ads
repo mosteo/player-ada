@@ -1,5 +1,3 @@
-
-
 --  Root package for the binding to the C library libplayerc.
 
 --  As a general rule, names of entities/functions are keep as closer as the
@@ -33,6 +31,13 @@ package Player is
 
    type Point_2d is record
       X, Y : aliased Double;
+   end record;
+
+   type Pose_3d is record
+      --  X,Y,Z [m]
+      px, py, pz : aliased Double;
+      --  roll, pitch, yaw [rad]
+      proll, ppitch, pyaw : aliased Double;
    end record;
 
    subtype Pose is Double_Array (1 .. 3);

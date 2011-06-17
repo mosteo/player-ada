@@ -124,6 +124,40 @@ player_ada_laser_get_robot_pose(playerc_laser_t *proxy,
     *a = proxy->robot_pose[2];
 }
 
+int
+player_ada_sonar_get_pose_count(playerc_sonar_t *proxy)
+{
+    return proxy->pose_count;
+}
+
+void
+player_ada_sonar_get_pose(playerc_sonar_t *proxy,
+				int i,
+				double *px, double *py, double *pz,
+				double *proll, double *ppitch, double *pyaw)
+{
+    *px = proxy->poses[i].px;
+    *py = proxy->poses[i].py;
+    *pz = proxy->poses[i].pz;
+    *proll = proxy->poses[i].proll;
+    *ppitch = proxy->poses[i].ppitch;
+    *pyaw = proxy->poses[i].pyaw;
+}
+
+int
+player_ada_sonar_get_scan_count(playerc_sonar_t *proxy,
+				int *ranges_count)
+{
+    return proxy->scan_count;
+}
+
+double
+player_ada_sonar_get_scan(playerc_sonar_t *proxy,
+				int i)
+{
+    return proxy->scan[i];
+}
+
 void
 player_ada_position2d_get_geom(playerc_position2d_t *proxy,
 			       double *x, double *y, double *a)
