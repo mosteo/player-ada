@@ -8,8 +8,6 @@ package Player.Sonar is
 
 --  For now, this hasn't been optimized for speed
 --  Each retrieval of a scan point/range/etc is a static call to the C side.
---  If this proves too inefficient, Ada-side caching should be added, when the
---  scan timestamp changes.
 
    pragma Elaborate_Body;
 
