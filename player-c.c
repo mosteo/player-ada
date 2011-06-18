@@ -19,6 +19,19 @@ playerc_error_mode ()
 }
 
 int
+playerc_device_get_fresh(playerc_device_t *device)
+{
+  return device->fresh;
+}
+
+void
+playerc_device_set_fresh(playerc_device_t *device,
+                         int fresh)
+{
+  device->fresh = fresh;
+}
+
+int
 player_ada_graphics2d_set_color(playerc_graphics2d_t *proxy,
                                  int a, int r, int g, int b)
 {
