@@ -1,4 +1,4 @@
- 
+
 
 --  Root class for interfaces.
 --  When extending these, each interface should provide its own Subscribe and
@@ -8,6 +8,8 @@ with Player.Client;
 with Player.Types;
 
 with Ada.Finalization;
+with Interfaces;
+use Interfaces;
 
 package Player.Interfaces is
 
@@ -42,6 +44,10 @@ package Player.Interfaces is
    procedure Subscribe    (This : in out Object; Mode : in Access_Modes);
 
    procedure Unsubscribe  (This : in out Object);
+
+   function  Get_Fresh    (This : in Object) return C.Int;
+
+   procedure Set_Fresh    (This : in out Object; Fresh : in C.Int);
 
 private
 

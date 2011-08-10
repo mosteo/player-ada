@@ -237,6 +237,28 @@ package body Player.Laser is
       return Integer (Internal (-This));
    end Get_Scan_Id;
 
+   -------------------
+   -- Get_Min_Right --
+   -------------------
+
+   function Get_Min_Right (This : in Object) return Double is
+      function Internal (This : Types.Handle) return C.Double;
+      pragma Import (C, Internal, "player_ada_laser_get_min_right");
+   begin
+      return Double (Internal (-This));
+   end Get_Min_Right;
+
+   ------------------
+   -- Get_Min_Left --
+   ------------------
+
+   function Get_Min_Left (This : in Object) return Double is
+      function Internal (This : Types.Handle) return C.Double;
+      pragma Import (C, Internal, "player_ada_laser_get_min_left");
+   begin
+      return Double (Internal (-This));
+   end Get_Min_Left;
+
    --------------------
    -- Get_Robot_Pose --
    --------------------

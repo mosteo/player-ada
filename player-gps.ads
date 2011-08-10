@@ -1,4 +1,4 @@
- --  GPS proxy interface
+--  GPS proxy interface
 
 with Player.Client;
 with Player.Interfaces;

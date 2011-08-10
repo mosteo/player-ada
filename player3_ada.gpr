@@ -12,7 +12,7 @@ project Player3_Ada is
 
    Build  : Build_Type   := External ("Player3_Ada_Build", "Debug");
    Link   : Linking_Type := External ("Player3_Ada_Link",  "Dependencies");
-   Prefix                := External ("Player3_Ada_Prefix", "/home/jano/local");
+   Prefix                := External ("Player3_Ada_Prefix", "/usr/local/ps3");
 
    package Ide is
       for Vcs_Kind use "Subversion";
@@ -53,7 +53,7 @@ project Player3_Ada is
 
    package Compiler is
 
-      for Default_Switches ("c")   use ("-g", "-Wall", "-O2", "-I" & Prefix & "/include/player-3.0");
+      for Default_Switches ("c")   use ("-g", "-Wall", "-O2", "-I" & Prefix & "/include/player-3.1");
       for Default_Switches ("ada") use ("-g", "-gnatf", "-gnat05", "-gnatwcfjkmoruvz", "-gnatyacehikn", "-gnatqQ");
 			--  gnatqQ allow to write a failed .ali compilation.
 			--  So we don't lose symbols in the IDE
