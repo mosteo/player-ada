@@ -1,4 +1,4 @@
- --  Auxiliary things for interfacing with C
+--  Auxiliary things for interfacing with C
 
 with Interfaces.C;
 with Interfaces.C.Strings;

@@ -1,10 +1,7 @@
-
-
 with Player.Aux;
 
 with Interfaces.C;
 with Interfaces.C.Strings; use Interfaces;
-with Ada.Text_IO; use Ada.Text_IO;
 
 package body Player.Client is
 

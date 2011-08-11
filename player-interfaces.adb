@@ -1,4 +1,4 @@
- 
+with Interfaces.C;
 
 package body Player.Interfaces is
 
@@ -76,5 +76,27 @@ package body Player.Interfaces is
          Destroy (Object'Class (This));
       end if;
    end Finalize;
+
+   ---------------
+   -- Get_Fresh --
+   ---------------
+
+   function Get_Fresh (This : in Object) return C.Int is
+      function Internal (This : Types.Handle) return C.Int;
+      pragma Import (C, Internal, "playerc_device_get_fresh");
+   begin
+      return Internal(-This);
+   end Get_Fresh;
+
+   ---------------
+   -- Set_Fresh --
+   ---------------
+
+   procedure Set_Fresh (This : in out Object; Fresh : in C.Int) is
+      procedure Internal (This : Types.Handle; Fresh : in C.Int);
+      pragma Import (C, Internal, "playerc_device_set_fresh");
+   begin
+      Internal(-This, Fresh);
+   end Set_Fresh;
 
 end Player.Interfaces;
