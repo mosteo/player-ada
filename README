@@ -6,7 +6,7 @@ Player-Ada is a not-so-thin binding to the libplayerc client library which is
 distributed as part of the Player/Stage multi-robot interface/simulator software:
 http://playerstage.sf.net
 
-Tested with: GNAT GPL 2009
+Tested with: GNAT GPL 2009/2010
 To use it, simply add this line to your project file:
 with "/path/to/player3_ada.gpr";
 
@@ -24,6 +24,9 @@ contributing back your changes will be very welcome
 
 Current version
 ===============
+Note: these numbering versions applied to the versions packaged in Sourceforge.
+Current versions, hosted in GitHub, might have tags following the same pattern.
+
 The three first digits match the Player version used for testing. 
 The last digit is for Player-Ada versioning under a same Player release.
 
@@ -37,14 +40,8 @@ See LICENSE file.
 
 Author
 ======
-
-This binding has been written by Alejandro R. Mosteo Chagoyen. Reach me at
-public@mosteo.com for bug reports, comments, etc.
+See AUTHORS file.
 
 Latest version of this library is hosted at
 
-   http://ada-player.sourceforge.net
-
-or (preferably)
-
-   http://www.mosteo.com
+https://github.com/mosteo/player-ada
